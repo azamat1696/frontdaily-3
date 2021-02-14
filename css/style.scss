@@ -1,0 +1,396 @@
+@import "../scss/font";
+@import "../scss/icon-font";
+ *{
+padding: 0;
+margin: 0;
+list-style: none;
+border: none;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Louis George Cafe";
+&:focus{
+  outline: 0;
+}
+ }
+body{
+  background-color: #1A212A;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.app{
+  width: 375px;
+  height: 667px;
+  overflow: auto;
+  border: 4px solid rgba(255,255,255,.2);
+  border-radius: 25px;
+  margin: 0 30px;
+  .app-inner{
+    height: calc(100% - 60px);
+    overflow: auto;
+
+    .app-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 27px 24px;
+      .balance{
+        .text{
+          font-size: 14px;
+          color: rgba(255,255,255, .5);
+        }
+        .money{
+
+          font-size: 38px;
+          color: #fff;
+        }
+      }
+      a{
+        img{
+
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          border: 2px solid #157AFF;
+          box-shadow: 0 3px 12px 0 rgba(21,122,255, .5);
+        }
+      }
+    }
+    .actions{
+      overflow-x: auto;
+      margin-bottom: 30px;
+      scroll-snap-type: x mandatory;
+      ul{
+        display: flex;
+        padding-bottom: 5px;
+        li:first-child{
+          padding-left: 24px;
+        }
+        li{
+          padding: 0 15px;
+          scroll-snap-align: start;
+          a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .icon {
+              width: 60px;
+              height: 50px;
+              min-width: 60px;
+              border-radius: 24px;
+              background-color:rgba(83,95,109,.19);
+              color: #ffffff;
+              font-size: 24px;
+              display: grid;
+              place-items: center;
+            }
+            .text{
+              font-size: 14px;
+              color: #fff;
+              margin-top: 13px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .transactions{
+    padding: 14px 24px;
+    background-color: #0c1117;
+    border-radius: 48px 48px 0 0;
+    h6{
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      align-items: center;
+      .button{
+        display: flex;
+        a{
+          width: 52px;
+          height: 52px;
+          min-width: 52px;
+          border-radius: 15px;
+          background-color: rgba(83,95,109,.19);
+          color: #fff;
+          font-size: 16px;
+          display: grid;
+          place-items: center;
+          margin-left: 18px;
+        }
+      }
+    }
+    .transation-list{
+      li{
+        margin-bottom: 17px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid rgba(226,233,255,.1);
+        a{
+          display: flex;
+          align-items: center;
+          .icon{
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            display: grid;
+            place-items: center;
+            border-radius: 16px;
+            overflow: hidden;
+            img{
+              max-height: 45px;
+              max-width: 45px;
+              -o-object-fit: cover;
+              object-fit: cover;
+            }
+          }
+          .transaction{
+            display: flex;
+            flex-direction: column;
+            .title{
+              color: #fff;
+              font-size: 16px;
+              font-weight: 700;
+            }
+            .date{
+              font-size: 14px;
+              color: rgba(255,255,255,.5);
+              padding-top: 10px;
+            }
+
+          }
+          .money{
+            margin-left: auto;
+            font-size: 18px;
+            font-weight: 700px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .menu{
+    background-color: #1a212a;
+    ul{
+      height: 60px;
+      display: flex;
+      li{
+        flex: 1;
+        a{
+          height: 60px;
+          display: grid;
+          place-items: center;
+          color: rgba(255,255,255,.5);
+          font-size: 28px;
+
+        }
+      }
+      li.active{
+        flex: 1;
+        a{
+           color: #157AFF;
+        }
+      }
+
+    }
+  }
+}
+.app{
+
+  .page{
+    padding: 24px;
+
+  .back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .back-btn{
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      .icon-back{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    }
+    .more-btn{
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+  .swiper-container{
+    margin-right: -24px;
+    margin-top: -61px;
+    padding-bottom: 45px;
+    .swiper-slide{
+      width: 327px;
+      display: flex;
+      justify-content: flex-end;
+
+      .card{
+        scroll-snap-align: start;
+        margin: 0 15px;
+        margin-top: 50px;
+        min-width: 307px;
+        height: 172px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 21px 16px 27px;
+        .bank-name{
+          color: #fff;
+          font-size: 16px;
+        }
+        img{
+          width: fit-content;
+          padding-top: 20px;
+
+        }
+
+
+        .card-information {
+          margin-top: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:first-child {
+            margin-right: 44px;
+          }
+          span{
+            margin-top: 23px;
+            padding: 0  10px !important;
+            color: #fff;
+            float: left;
+          }
+        }
+      }
+
+    }
+    .swiper-pagination{
+      .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+        border: 1px solid #fff;
+        opacity: 1;
+        &.swiper-pagination-bullet-active{
+          background-color: #fff;
+        }
+      }
+    }
+
+}
+
+}
+  h6{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0 25px;
+  }
+.peoples{
+  overflow: auto;
+  ul{
+    display: flex;
+  }
+  li{
+    margin-right: 15px;
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon{
+        display: grid;
+        place-items: center;
+        background-color: #157AFF;
+        width: 60px;
+        height: 60px;
+        border-color: #157AFF;
+        border-radius: 24px;
+        color: #fff;
+        box-shadow: 0 1px 12px 0 rgba(#6289FF, .3);
+      }
+      img{
+        width: 60px;
+        height: 60px;
+        border-radius: 24px;
+        object-fit: cover;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0, .17);
+      }
+      .name{
+        color: #fff;
+        font-size: 14px;
+        padding: 10px  0;
+      }
+    }
+  }
+}
+
+div.card-dark{background: linear-gradient(to right,#141414,#292929);}
+div.card-blue{background: linear-gradient(to right, #6289ff, #5252ff);}
+
+
+  .setting-menu{
+    border-top: 1px solid #aaa;
+    ul{
+      li{
+        border-bottom: 1px solid #aaa;
+        a{
+          display: flex;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 22px 0;
+          color: #fff;
+          align-items: center;
+          i:first-child {
+            width: 30px;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 16px;
+            color: #157AFF;
+          }
+          i:last-child {
+            margin-left: auto;
+            font-size: 12px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

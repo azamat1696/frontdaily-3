@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafe-Bold.eot");
+  src: url("../font/LouisGeorgeCafe-Bold.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafe-Bold.woff2") format("woff2"), url("../font/LouisGeorgeCafe-Bold.woff") format("woff"), url("../font/LouisGeorgeCafe-Bold.ttf") format("truetype"), url("../font/LouisGeorgeCafe-Bold.svg#LouisGeorgeCafe-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafe.eot");
+  src: url("../font/LouisGeorgeCafe.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafe.woff2") format("woff2"), url("../font/LouisGeorgeCafe.woff") format("woff"), url("../font/LouisGeorgeCafe.ttf") format("truetype"), url("../font/LouisGeorgeCafe.svg#LouisGeorgeCafe") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafeLight.eot");
+  src: url("../font/LouisGeorgeCafeLight.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafeLight.woff2") format("woff2"), url("../font/LouisGeorgeCafeLight.woff") format("woff"), url("../font/LouisGeorgeCafeLight.ttf") format("truetype"), url("../font/LouisGeorgeCafeLight.svg#LouisGeorgeCafeLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("../icon-font/iconfont.eot?71890918");
+  src: url("../icon-font/iconfont.eot?71890918#iefix") format("embedded-opentype"), url("../icon-font/iconfont.woff2?71890918") format("woff2"), url("../icon-font/iconfont.woff?71890918") format("woff"), url("../icon-font/iconfont.ttf?71890918") format("truetype"), url("../icon-font/iconfont.svg?71890918#iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.svg?71890918#iconfont') format('svg');
+  }
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+/* '' */
+.icon-atm:before {
+  content: "";
+}
+
+/* '' */
+.icon-back:before {
+  content: "";
+}
+
+/* '' */
+.icon-bank:before {
+  content: "";
+}
+
+/* '' */
+.icon-block:before {
+  content: "";
+}
+
+/* '' */
+.icon-card:before {
+  content: "";
+}
+
+/* '' */
+.icon-chart:before {
+  content: "";
+}
+
+/* '' */
+.icon-download:before {
+  content: "";
+}
+
+/* '' */
+.icon-filter:before {
+  content: "";
+}
+
+/* '' */
+.icon-loan:before {
+  content: "";
+}
+
+/* '' */
+.icon-pig:before {
+  content: "";
+}
+
+/* '' */
+.icon-pincode:before {
+  content: "";
+}
+
+/* '' */
+.icon-request:before {
+  content: "";
+}
+
+/* '' */
+.icon-send:before {
+  content: "";
+}
+
+/* '' */
+.icon-plus:before {
+  content: "";
+}
+
+/* '' */
+.icon-search:before {
+  content: "";
+}
+
+/* '' */
+.icon-home:before {
+  content: "";
+}
+
+/* '' */
+.icon-3dots:before {
+  content: "";
+}
+
+/* '' */
+.icon-settings:before {
+  content: "";
+}
+
+/* '' */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: louis g;
+}
+*:focus {
+  outline: 0;
+}

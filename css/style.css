@@ -1,0 +1,498 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafe-Bold.eot");
+  src: url("../font/LouisGeorgeCafe-Bold.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafe-Bold.woff2") format("woff2"), url("../font/LouisGeorgeCafe-Bold.woff") format("woff"), url("../font/LouisGeorgeCafe-Bold.ttf") format("truetype"), url("../font/LouisGeorgeCafe-Bold.svg#LouisGeorgeCafe-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafe.eot");
+  src: url("../font/LouisGeorgeCafe.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafe.woff2") format("woff2"), url("../font/LouisGeorgeCafe.woff") format("woff"), url("../font/LouisGeorgeCafe.ttf") format("truetype"), url("../font/LouisGeorgeCafe.svg#LouisGeorgeCafe") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("../font/LouisGeorgeCafeLight.eot");
+  src: url("../font/LouisGeorgeCafeLight.eot?#iefix") format("embedded-opentype"), url("../font/LouisGeorgeCafeLight.woff2") format("woff2"), url("../font/LouisGeorgeCafeLight.woff") format("woff"), url("../font/LouisGeorgeCafeLight.ttf") format("truetype"), url("../font/LouisGeorgeCafeLight.svg#LouisGeorgeCafeLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("../icon-font/iconfont.eot?71890918");
+  src: url("../icon-font/iconfont.eot?71890918#iefix") format("embedded-opentype"), url("../icon-font/iconfont.woff2?71890918") format("woff2"), url("../icon-font/iconfont.woff?71890918") format("woff"), url("../icon-font/iconfont.ttf?71890918") format("truetype"), url("../icon-font/iconfont.svg?71890918#iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.svg?71890918#iconfont') format('svg');
+  }
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+/* '' */
+.icon-atm:before {
+  content: "";
+}
+
+/* '' */
+.icon-back:before {
+  content: "";
+}
+
+/* '' */
+.icon-bank:before {
+  content: "";
+}
+
+/* '' */
+.icon-block:before {
+  content: "";
+}
+
+/* '' */
+.icon-card:before {
+  content: "";
+}
+
+/* '' */
+.icon-chart:before {
+  content: "";
+}
+
+/* '' */
+.icon-download:before {
+  content: "";
+}
+
+/* '' */
+.icon-filter:before {
+  content: "";
+}
+
+/* '' */
+.icon-loan:before {
+  content: "";
+}
+
+/* '' */
+.icon-pig:before {
+  content: "";
+}
+
+/* '' */
+.icon-pincode:before {
+  content: "";
+}
+
+/* '' */
+.icon-request:before {
+  content: "";
+}
+
+/* '' */
+.icon-send:before {
+  content: "";
+}
+
+/* '' */
+.icon-plus:before {
+  content: "";
+}
+
+/* '' */
+.icon-search:before {
+  content: "";
+}
+
+/* '' */
+.icon-home:before {
+  content: "";
+}
+
+/* '' */
+.icon-3dots:before {
+  content: "";
+}
+
+/* '' */
+.icon-settings:before {
+  content: "";
+}
+
+/* '' */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Louis George Cafe";
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #1A212A;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.app {
+  width: 375px;
+  height: 667px;
+  overflow: auto;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  margin: 0 30px;
+}
+.app .app-inner {
+  height: calc(100% - 60px);
+  overflow: auto;
+}
+.app .app-inner .app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 24px;
+}
+.app .app-inner .app-header .balance .text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.app .app-inner .app-header .balance .money {
+  font-size: 38px;
+  color: #fff;
+}
+.app .app-inner .app-header a img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #157AFF;
+  box-shadow: 0 3px 12px 0 rgba(21, 122, 255, 0.5);
+}
+.app .app-inner .actions {
+  overflow-x: auto;
+  margin-bottom: 30px;
+  scroll-snap-type: x mandatory;
+}
+.app .app-inner .actions ul {
+  display: flex;
+  padding-bottom: 5px;
+}
+.app .app-inner .actions ul li:first-child {
+  padding-left: 24px;
+}
+.app .app-inner .actions ul li {
+  padding: 0 15px;
+  scroll-snap-align: start;
+}
+.app .app-inner .actions ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.app .app-inner .actions ul li a .icon {
+  width: 60px;
+  height: 50px;
+  min-width: 60px;
+  border-radius: 24px;
+  background-color: rgba(83, 95, 109, 0.19);
+  color: #ffffff;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+}
+.app .app-inner .actions ul li a .text {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 13px;
+}
+.app .transactions {
+  padding: 14px 24px;
+  background-color: #0c1117;
+  border-radius: 48px 48px 0 0;
+}
+.app .transactions h6 {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  align-items: center;
+}
+.app .transactions h6 .button {
+  display: flex;
+}
+.app .transactions h6 .button a {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 15px;
+  background-color: rgba(83, 95, 109, 0.19);
+  color: #fff;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  margin-left: 18px;
+}
+.app .transactions .transation-list li {
+  margin-bottom: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(226, 233, 255, 0.1);
+}
+.app .transactions .transation-list li a {
+  display: flex;
+  align-items: center;
+}
+.app .transactions .transation-list li a .icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.app .transactions .transation-list li a .icon img {
+  max-height: 45px;
+  max-width: 45px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.app .transactions .transation-list li a .transaction {
+  display: flex;
+  flex-direction: column;
+}
+.app .transactions .transation-list li a .transaction .title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.app .transactions .transation-list li a .transaction .date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+}
+.app .transactions .transation-list li a .money {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700px;
+  color: #fff;
+}
+.app .menu {
+  background-color: #1a212a;
+}
+.app .menu ul {
+  height: 60px;
+  display: flex;
+}
+.app .menu ul li {
+  flex: 1;
+}
+.app .menu ul li a {
+  height: 60px;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 28px;
+}
+.app .menu ul li.active {
+  flex: 1;
+}
+.app .menu ul li.active a {
+  color: #157AFF;
+}
+
+.app .page {
+  padding: 24px;
+}
+.app .page .back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.app .page .back .back-btn {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.app .page .back .back-btn .icon-back {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.app .page .back .more-btn {
+  color: #fff;
+  font-size: 30px;
+}
+.app .page .swiper-container {
+  margin-right: -24px;
+  margin-top: -61px;
+  padding-bottom: 45px;
+}
+.app .page .swiper-container .swiper-slide {
+  width: 327px;
+  display: flex;
+  justify-content: flex-end;
+}
+.app .page .swiper-container .swiper-slide .card {
+  scroll-snap-align: start;
+  margin: 0 15px;
+  margin-top: 50px;
+  min-width: 307px;
+  height: 172px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 21px 16px 27px;
+}
+.app .page .swiper-container .swiper-slide .card .bank-name {
+  color: #fff;
+  font-size: 16px;
+}
+.app .page .swiper-container .swiper-slide .card img {
+  width: fit-content;
+  padding-top: 20px;
+}
+.app .page .swiper-container .swiper-slide .card .card-information {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app .page .swiper-container .swiper-slide .card .card-information:first-child {
+  margin-right: 44px;
+}
+.app .page .swiper-container .swiper-slide .card .card-information span {
+  margin-top: 23px;
+  padding: 0 10px !important;
+  color: #fff;
+  float: left;
+}
+.app .page .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+.app .page .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.app h6 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 25px 0 25px;
+}
+.app .peoples {
+  overflow: auto;
+}
+.app .peoples ul {
+  display: flex;
+}
+.app .peoples li {
+  margin-right: 15px;
+}
+.app .peoples li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .peoples li a .icon {
+  display: grid;
+  place-items: center;
+  background-color: #157AFF;
+  width: 60px;
+  height: 60px;
+  border-color: #157AFF;
+  border-radius: 24px;
+  color: #fff;
+  box-shadow: 0 1px 12px 0 rgba(98, 137, 255, 0.3);
+}
+.app .peoples li a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.17);
+}
+.app .peoples li a .name {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.app div.card-dark {
+  background: linear-gradient(to right, #141414, #292929);
+}
+.app div.card-blue {
+  background: linear-gradient(to right, #6289ff, #5252ff);
+}
+.app .setting-menu {
+  border-top: 1px solid #aaa;
+}
+.app .setting-menu ul li {
+  border-bottom: 1px solid #aaa;
+}
+.app .setting-menu ul li a {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 22px 0;
+  color: #fff;
+  align-items: center;
+}
+.app .setting-menu ul li a i:first-child {
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #157AFF;
+}
+.app .setting-menu ul li a i:last-child {
+  margin-left: auto;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
